@@ -32,7 +32,7 @@ services:
       - backend_network
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
-      timeout: 5s
+      timeout: 10s
       retries: 3
 
 networks:
