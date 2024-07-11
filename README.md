@@ -17,7 +17,7 @@ I'm a junior DevOps engineer with some expertise in BackEnd development using Ja
 
 # Angular, Nodejs and MySql stack
 
-Set up your own local three tier web app in your Windows operating system using Angular as your frontend, Nodejs as your backend and MySql as your relational database linked to the backend service. Just a few steps are needed to deploy these components with the help of [Podman](https://podman.io/).
+Set up your own local three tier web app in any operating system using Vagrant to deploy an Ubuntu VM and serve Angular as your frontend, Nodejs as your backend and MySql as your relational database linked to the backend service.
 
 ## Tech Stack 
 
@@ -25,21 +25,23 @@ Set up your own local three tier web app in your Windows operating system using 
 - **Server:** Nodejs
 - **Database:** MySql
 - **Cloud provider:** ---
-- **Tools:** Podman
+- **Tools:** Vagrant, Docker
 
 ## Installation
 
-1. Install Podman in your Windows operating system [Podman Installation Instructions](https://podman-desktop.io/docs/installation/windows-install)
-2. Install Podman compose plugin in your Podman control panel [Setting up Compose
-](https://podman-desktop.io/docs/compose/setting-up-compose)
+1. Install VirtualBox as your virtual machine provider [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+2. Install Vagrant according to your operating system [Install Vagrant
+](https://developer.hashicorp.com/vagrant/downloads)
 
 ## Deployment
 
-To deploy this project, run in your PowerShell
+To deploy this project run
 
 ```bash
-  .\Deploy.ps1
+  vagrant up
 ```
+
+For more informations about vagrant commands check [vagrant-cheat-sheet](https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4)
 
 ## Authors
 
